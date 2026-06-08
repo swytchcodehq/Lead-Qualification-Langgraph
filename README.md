@@ -1,4 +1,4 @@
-# Lead Qualification — LangGraph + Swytchcode
+# Lead Qualification - LangGraph + Swytchcode
 
 Automates lead capture and sales pipeline creation:
 1. Creates a HubSpot contact
