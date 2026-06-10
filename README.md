@@ -2,19 +2,19 @@
 
 A LangGraph agent that captures an inbound lead in HubSpot and opens a sales deal for it.
 
-> Run one command to turn an inbound lead into a HubSpot contact and an associated deal in your pipeline. No API glue code, no credential juggling, no retry logic to maintain.
+> Run one command to turn an inbound lead into a HubSpot contact and an associated deal in your pipeline, without writing API glue code or managing credentials and retries.
 
 [![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue?style=flat-square)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
 [![Last commit](https://img.shields.io/github/last-commit/swytchcodehq/Lead-Qualification-Langgraph?style=flat-square)](https://github.com/swytchcodehq/Lead-Qualification-Langgraph/commits)
 
-## What This Does
+## What this does
 
 This demo handles inbound lead capture in HubSpot. It creates a HubSpot contact for the lead, then opens a HubSpot deal associated with that contact so the opportunity lands in your pipeline. The steps run as a LangGraph state machine, so the contact ID flows into the deal association.
 
 Every external call goes through [Swytchcode](https://www.swytchcode.com/), a deterministic API execution layer for AI agents. The agent code never calls HubSpot directly. It asks the Swytchcode runtime to run a named method, and the runtime validates the request against a schema registry of 2,000+ integrations, handles auth and retries, and records an audit trail of what ran.
 
-## How It Works
+## How it works
 
 The graph has two nodes and runs them in order:
 
@@ -28,7 +28,7 @@ create_contact -> create_deal
 ## Prerequisites
 
 - **Python 3.9+**
-- **Swytchcode CLI.** Install with the verified script for your platform:
+- **Swytchcode CLI:** install with the verified script for your platform:
 
   Linux / macOS:
   ```bash
@@ -60,7 +60,7 @@ create_contact -> create_deal
    swytchcode bootstrap
    ```
 
-## Environment Variables
+## Environment variables
 
 | Variable | Required | Description |
 |----------|----------|-------------|
@@ -75,7 +75,7 @@ The lead details (name, email, company, phone, deal value) are defined as a samp
 python main.py
 ```
 
-## Expected Output
+## Expected output
 
 The script prints each node as it runs and a summary at the end:
 
@@ -92,7 +92,7 @@ Lead qualified!
 
 After a run you should see a new contact in HubSpot and an associated deal in the default pipeline at the appointment-scheduled stage.
 
-## Canonical IDs Used
+## Canonical IDs used
 
 | Service | Canonical ID |
 |---------|--------------|
