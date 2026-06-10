@@ -65,7 +65,7 @@ create_contact -> create_deal
 | Variable | Required | Description |
 |----------|----------|-------------|
 | `HUBSPOT_API_KEY` | Yes | HubSpot private app token, used for both the contact and the deal. |
-| `SWYTCHCODE_TOKEN` | Yes | Swytchcode auth token. Run `swytchcode whoami` to get yours. |
+| `SWYTCHCODE_TOKEN` | Yes | Swytchcode auth token. Get yours from the Swytchcode dashboard under Settings, API keys. |
 
 The lead details (name, email, company, phone, deal value) are defined as a sample in `main.py`. Edit them there to qualify a different lead.
 
@@ -106,7 +106,6 @@ Runnable LangGraph + Swytchcode examples:
 - [Weekly-Reporting-Langgraph](https://github.com/swytchcodehq/Weekly-Reporting-Langgraph)
 - [Customer-Onboarding-Langgraph](https://github.com/swytchcodehq/Customer-Onboarding-Langgraph)
 - [Create-And-Send-Payment-Langgraph](https://github.com/swytchcodehq/Create-And-Send-Payment-Langgraph)
-- [Lead-Qualification-Langgraph](https://github.com/swytchcodehq/Lead-Qualification-Langgraph)
 - [Bug-Escalation-Langgraph](https://github.com/swytchcodehq/Bug-Escalation-Langgraph)
 
 ## License
