@@ -30,13 +30,7 @@ create_contact -> create_deal
 - **Python 3.9+**
 - **Swytchcode CLI:** install with the verified script for your platform:
 
-  Linux / macOS:
-  ```bash
-  curl -fsSL https://cli.swytchcode.com/install.sh | sh
-  ```
-  Windows (PowerShell):
-  ```powershell
-  irm https://cli.swytchcode.com/install.ps1 | iex
+ npm install -g swytchcode
   ```
 - A **HubSpot** private app token with CRM contact and deal scopes (see the table below).
 
