@@ -42,7 +42,8 @@ python main.py
 
 ## Canonical IDs Used
 
-| Service | Canonical ID              |
-|---------|---------------------------|
-| HubSpot | `crm.v3.contacts.create`  |
-| HubSpot | `crm.v3.deals.create`     |
+| Service | Canonical ID |
+|---------|--------------|
+| Hubspot | `hubspot.crm.contacts.create` |
+| Hubspot | `hubspot.crm.deals.create` |
+
