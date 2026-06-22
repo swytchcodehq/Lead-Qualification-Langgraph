@@ -383,7 +383,7 @@ METHODS:
         STATUS: 500
         WHEN: HTTP default
     CANONICAL_ID: crm.v3.deals.list
-  crm.v3.deals.create:
+  hubspot.crm.deals.create:
     SUMMARY: Create
     DESC: Create a deal with the given properties and return a copy of the object, including the ID. Documentation and examples for creating standard deals is provided.
     HTTP:
@@ -419,7 +419,7 @@ METHODS:
       - TYPE: ANY
         STATUS: 500
         WHEN: HTTP default
-    CANONICAL_ID: crm.v3.deals.create
+    CANONICAL_ID: hubspot.crm.deals.create
   crm.v3.upsert.create:
     SUMMARY: Create or update a batch of deals by unique property values
     HTTP:

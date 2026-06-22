@@ -1,4 +1,592 @@
 {
+  "hubspot.account_accountinfo": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.account_auditlogs": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.account_testchildapi": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.auth_oauth": {
+    "version": "1",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.automation_actionsv4": {
+    "version": "4",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.automation_automationv4": {
+    "version": "4",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.automation_sequences": {
+    "version": "4",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.business_units_businessunits": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.cms_authors": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.cms_blogsettings": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.cms_cmscontentaudit": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.cms_domains": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.cms_mediabridge": {
+    "version": "1",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.cms_pages": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.cms_posts": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.cms_sitesearch": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.cms_sourcecode": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.cms_tags": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.cms_urlredirects": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.communication_preferences_subscriptions": {
+    "version": "4",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.conversations_conversationsinboxmessages": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.conversations_customchannels": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.conversations_visitoridentification": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_appointments": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_appuninstalls": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_associations": {
+    "version": "4",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_associationsschema": {
+    "version": "4",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_buckettest111": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_callingextensions": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_calls": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_carts": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_commercepayments": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_commercesubscriptions": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_communications": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_companies": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_contacts": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_contracts": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_courses": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_crmowners": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_customobjects": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_customobjects_core": {
+    "version": "4 Jentic Modified",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_deals": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_dealsplits": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_discounts": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_emails": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_exports": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_feedbacksubmissions": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_fees": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_goaltargets": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_imports": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_invoices": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_leads": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_limitstracking": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_lineitems": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_listings": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_lists": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_meetings": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_notes": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_objectlibrary": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_objects": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_orders": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_partnerclients": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_payments": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_pipelines": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_postalmail": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_products": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_properties": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_propertyvalidations": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_publicappcrmcards": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_publicappfeatureflagsv3": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_quotes": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_schemas": {
+    "version": "3 1 Jentic Modified",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_schemas_core": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_services": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_tasks": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_taxes": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_tickets": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_timeline": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_users": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.crm_videoconferencingextension": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.events_events": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.events_manageeventdefinitions": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.events_sendeventcompletions": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.files_files": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
   "hubspot.hubspot_com_account_accountinfo_3_json": {
     "version": "3",
     "sandbox_endpoint": "https://api.hubapi.com",
@@ -658,6 +1246,83 @@
     "workflows": 0
   },
   "hubspot.hubspot_com_webhooks_webhooks_3_json": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.marketing_campaignspublicapi": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.marketing_forms": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.marketing_marketingemails": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.marketing_marketingemailsv3": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.marketing_marketingevents": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.marketing_singlesend": {
+    "version": "4",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.marketing_transactionalsinglesend": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.scheduler_meetings": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.settings_multicurrency": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.settings_userprovisioning": {
+    "version": "3",
+    "sandbox_endpoint": "https://api.hubapi.com",
+    "production_endpoint": "https://api.hubapi.com",
+    "methods": 979,
+    "workflows": 0
+  },
+  "hubspot.webhooks_webhooks": {
     "version": "3",
     "sandbox_endpoint": "https://api.hubapi.com",
     "production_endpoint": "https://api.hubapi.com",

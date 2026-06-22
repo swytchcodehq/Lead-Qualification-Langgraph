@@ -2,7 +2,7 @@ from swytchcode_runtime import exec as swytchcode_exec
 from langgraph.graph import StateGraph, END
 from typing import TypedDict, Optional
 from dotenv import load_dotenv
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 import os
 import sys
 
@@ -27,7 +27,7 @@ class LeadQualificationState(TypedDict):
 def create_hubspot_contact(state: LeadQualificationState) -> dict:
     print(f"[1/2] Creating HubSpot contact for {state['lead_email']}...")
     name_parts = state["lead_name"].split()
-    result = swytchcode_exec("crm.v3.contacts.create", {
+    result = swytchcode_exec("hubspot.crm.contacts.create", {
         "body": {
             "properties": {
                 "email":          state["lead_email"],
@@ -40,22 +40,27 @@ def create_hubspot_contact(state: LeadQualificationState) -> dict:
         },
         "Authorization": f"Bearer {os.environ['HUBSPOT_API_KEY']}",
     })
-    contact_id = (result or {}).get("data", {}).get("id")
+    if result.get("status_code") == 409 and "Existing ID:" in result.get("data", {}).get("message", ""):
+        msg = result["data"]["message"]
+        contact_id = msg.split("Existing ID: ")[1].split()[0]
+    elif result.get("status_code") not in (200, 201):
+        raise RuntimeError(f"HubSpot contact create failed: {result}")
+    else:
+        contact_id = (result or {}).get("id") or (result or {}).get("data", {}).get("id")
+        
     print(f"    ✔ HubSpot contact created: {contact_id}")
     return {"hubspot_contact_id": contact_id}
 
 
-# ── Node 2: Create HubSpot deal ──────────────────────────────────────────────
+# 🛠️ Node 2: Create HubSpot Deal 🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️
 
 def create_hubspot_deal(state: LeadQualificationState) -> dict:
     print(f"[2/2] Creating HubSpot sales opportunity for {state['company']}...")
-    close_date = (datetime.utcnow() + timedelta(days=30)).strftime("%Y-%m-%d")
-    result = swytchcode_exec("crm.v3.deals.create", {
+    close_date = (datetime.now(timezone.utc) + timedelta(days=30)).strftime("%Y-%m-%d")
+    result = swytchcode_exec("hubspot.crm.deals.create", {
         "body": {
             "properties": {
                 "dealname":  f"{state['company']} — Inbound Lead",
-                "dealstage": "appointmentscheduled",
-                "pipeline":  "default",
                 "amount":    str(state["deal_value"]),
                 "closedate": close_date,
             },
@@ -68,7 +73,14 @@ def create_hubspot_deal(state: LeadQualificationState) -> dict:
         },
         "Authorization": f"Bearer {os.environ['HUBSPOT_API_KEY']}",
     })
-    deal_id = (result or {}).get("data", {}).get("id")
+    if result.get("status_code") == 409 and "Existing ID:" in result.get("data", {}).get("message", ""):
+        msg = result["data"]["message"]
+        deal_id = msg.split("Existing ID: ")[1].split()[0]
+    elif result.get("status_code") not in (200, 201):
+        raise RuntimeError(f"HubSpot deal create failed: {result}")
+    else:
+        deal_id = (result or {}).get("id") or (result or {}).get("data", {}).get("id")
+        
     print(f"    ✔ HubSpot deal created: {deal_id}")
     return {"hubspot_deal_id": deal_id}
 
@@ -102,4 +114,3 @@ if __name__ == "__main__":
     print("\n✅ Lead qualified!")
     print(f"   HubSpot Contact ID: {result['hubspot_contact_id']}")
     print(f"   HubSpot Deal ID:    {result['hubspot_deal_id']}")
-

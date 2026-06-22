@@ -8,9 +8,9 @@
       "version": "3"
     }
   },
-  "mode": "production",
+  "mode": "sandbox",
   "tools": {
-    "crm.v3.contacts.create": {
+    "hubspot.crm.contacts.create": {
       "desc": "Create a contact with the given properties and return a copy of the object, including the ID.",
       "inputs": [
         {
@@ -20,13 +20,13 @@
             "TYPE": "OBJECT",
             "schema": {
               "properties": {
-                "properties": {
-                  "required": true,
-                  "type": "object"
-                },
                 "associations": {
                   "required": false,
                   "type": "array"
+                },
+                "properties": {
+                  "required": true,
+                  "type": "object"
                 }
               }
             }
@@ -38,6 +38,14 @@
       "output": {
         "schema": {
           "properties": {
+            "archived": {
+              "required": false,
+              "type": "boolean"
+            },
+            "createdAt": {
+              "required": true,
+              "type": "string"
+            },
             "id": {
               "required": true,
               "type": "string"
@@ -46,17 +54,9 @@
               "required": true,
               "type": "object"
             },
-            "createdAt": {
-              "required": true,
-              "type": "string"
-            },
             "updatedAt": {
               "required": true,
               "type": "string"
-            },
-            "archived": {
-              "required": false,
-              "type": "boolean"
             }
           }
         },
@@ -65,7 +65,7 @@
       "summary": "Create a HubSpot contact",
       "type": "method"
     },
-    "crm.v3.deals.create": {
+    "hubspot.crm.deals.create": {
       "desc": "Create a deal with the given properties and return a copy of the object, including the ID.",
       "inputs": [
         {
@@ -75,13 +75,13 @@
             "TYPE": "OBJECT",
             "schema": {
               "properties": {
-                "properties": {
-                  "required": true,
-                  "type": "object"
-                },
                 "associations": {
                   "required": false,
                   "type": "array"
+                },
+                "properties": {
+                  "required": true,
+                  "type": "object"
                 }
               }
             }
@@ -93,6 +93,14 @@
       "output": {
         "schema": {
           "properties": {
+            "archived": {
+              "required": false,
+              "type": "boolean"
+            },
+            "createdAt": {
+              "required": true,
+              "type": "string"
+            },
             "id": {
               "required": true,
               "type": "string"
@@ -101,17 +109,9 @@
               "required": true,
               "type": "object"
             },
-            "createdAt": {
-              "required": true,
-              "type": "string"
-            },
             "updatedAt": {
               "required": true,
               "type": "string"
-            },
-            "archived": {
-              "required": false,
-              "type": "boolean"
             }
           }
         },
